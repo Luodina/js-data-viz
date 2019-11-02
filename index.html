@@ -25,6 +25,12 @@
          <div id="accomodation-price-chart"></div>
        </div>
     </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div id="neighbourhood-chart"></div>
+      </div>
+    </div>
   </div>
 
   <!-- Load the library -->
@@ -39,11 +45,16 @@
   <!-- Load accomodation price chart -->
   <script src="charts/accomodation-price-chart.js"></script>
 
+  <!-- Load neighbourhood chart -->
+  <script src="charts/neighbourhood-chart.js"></script>
+
   <script>
     // Create types of accommodation chart
     makeChartForAccommodationTypes(window.airbnbAccomodationData);
     // Create accomodation prices chart
     accomodationPriceChart(window.airbnbAccomodationData);
+    // Create neighbourhood chart
+    neighbourhoodChart(window.airbnbAccomodationData);
   </script>
 </body>
 </html>
