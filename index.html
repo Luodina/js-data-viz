@@ -20,6 +20,10 @@
       <div class="col-4">
         <div id="types-of-accommodation-chart"></div>
        </div>
+
+       <div class="col-8">
+         <div id="accomodation-price-chart"></div>
+       </div>
     </div>
   </div>
 
@@ -32,9 +36,14 @@
   <!-- Load types of accommodation chart -->
   <script src="charts/types-of-accommodation.js"></script>
 
+  <!-- Load accomodation price chart -->
+  <script src="charts/accomodation-price-chart.js"></script>
+
   <script>
     // Create types of accommodation chart
     makeChartForAccommodationTypes(window.airbnbAccomodationData);
+    // Create accomodation prices chart
+    accomodationPriceChart(window.airbnbAccomodationData);
   </script>
 </body>
 </html>
