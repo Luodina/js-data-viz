@@ -26,7 +26,7 @@
       </div>
 
       <div class="col">
-        Col 3
+        <div id="pie-chart"></div>
       </div>
     </div>
   </div>
@@ -84,6 +84,52 @@
         name: 'London',
         data: [61.5, 36.2, 49.8, 42.5, 45.0, 45.8, 45.7, 44.2, 42.7, 72.6, 45.1, 59.3]
       }]
+    })
+
+    // Pie chart
+    Highcharts.chart('pie-chart', {
+      chart: {
+        type: 'pie'
+      },
+      title: {
+        text: 'Hong Kong\'s principal ethnic minorities'
+      },
+      series: [
+        {
+          name: 'Ethnic minorities',
+          data: [{
+            name: 'Indonesian',
+            y: 153299
+          }, {
+            name: 'Filipino',
+            y: 184081
+          }, {
+            name: 'White',
+            y: 58209
+          }, {
+            name: 'Indian',
+            y: 36462
+          }, {
+            name: 'Pakistani',
+            y: 18094
+          }, {
+            name: 'Nepalese',
+            y: 25472
+          }, {
+            name: 'Japanese',
+            y: 9976
+          }, {
+            name: 'Thai',
+            y: 10215
+          }, {
+            name: 'Other Asian',
+            y: 19589
+          }, {
+            name: 'Others',
+            y: 68986
+          }]
+        }
+      ]
     })
   </script>
 </body>
